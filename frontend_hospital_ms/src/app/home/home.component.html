@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Slide Carousel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: calc(100vh - 50px);
+            /* Adjust for footer height */
+            object-fit: cover;
+        }
+        
+        footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+        
+        .carousel-caption h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .carousel-caption p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><b>DNYANOBA HOSPITALS</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto"></ul>
+            <div class="mx-2">
+                <a class="btn btn-danger text-white" style="margin: 5px;" href="javascript:void(0);" routerLink="/doclogin">Login as Doctor</a>
+                <a class="btn btn-danger text-white" style="margin: 5px;" href="javascript:void(0);" routerLink="/adlogin">Login as Admin</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/banner.jpg" class="d-block w-100" alt="Banner">
+                <div class="carousel-caption">
+                    <h2>Welcome to DNYANOBA</h2>
+                    <p>10000+ Healing Hands | Advanced Treatment | Best Clinical Outcomes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Contact: 1860 344 5454 | &copy; 2024-2025 DNYANOBA Hospitals, Inc.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
